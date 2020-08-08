@@ -1,5 +1,3 @@
 class ApplicationRecord < ActiveRecord::Base
-  belongs_to :room
-  belongs_to :user
-  has_one_attached :image
+  self.abstract_class = true
 end
