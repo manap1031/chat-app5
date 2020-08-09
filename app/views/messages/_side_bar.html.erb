@@ -1,10 +1,10 @@
 <div class="side-bar-header">
-  <div class="header-name">
+  <div class="side-header-name">
     <%= link_to edit_user_path(current_user) do %>
       <%= current_user.name %>
     <% end %>
   </div>
-  <div class="create-room">
+  <div class="side-room">
     <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
@@ -17,11 +17,4 @@
       </div>
     </div>
   <% end %>
-  <div class="room">
-    <% current_user.rooms.each do |room| %>
-      <div class="room-name">
-        <a href="#"><%= room.name%></a>
-      </div>
-    <%end%>
-  </div>
 </div>
