@@ -4,7 +4,7 @@
       <%= current_user.name %>
     <% end %>
   </div>
-  <div class="side-hedwr-message">
+  <div class="side-room">
     <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
@@ -17,11 +17,4 @@
       </div>
     </div>
   <% end %>
-  <div class="room">
-    <% current_user.rooms.each do |room| %>
-      <div class="room-name">
-        <a href="#"><%= room.name%></a>
-      </div>
-    <%end%>
-  </div>
 </div>
